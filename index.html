@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Cálculo IMC</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+<div class="container">
+    <div class="box">
+        <h3 class="titulo">
+            Digite o peso e a altura para cálculo do IMC
+        </h3>
+        <div class="form-container">
+            <div id="formulario" name="form">
+                <div class="inputs">
+                    <input type="text" id="pesoid" placeholder="60.00kg" required="required" name="peso"/>
+                    <label for="peso">Peso</label>
+                    <input type="text" id="alturaid" placeholder="1.66m" name="altura" />
+                    <label for="altura">Altura</label>
+                </div>
+                <div class="submit">
+                    <input type="submit" class="enviar" onclick="calculoImc();" value="Calcular"/>
+                    <p class="titulo">
+                        IMC:
+                        <span id="resultadoIMC">
+                        </span>
+                        Kg/m2
+                    </p>
+                    <p class="titulo">
+                        <span id="resultado">
+                        </span>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="calculo.js">
+
+</script>
+
+</html>
